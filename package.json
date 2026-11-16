@@ -1,0 +1,21 @@
+{
+  "name": "arabic-page-reader",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Chrome MV3 Charon reader through an owner-operated Cloudflare proxy, without end-user Gemini keys.",
+  "scripts": {
+    "test": "node --test tests/unit.mjs && node tests/integration.mjs",
+    "test:unit": "node --test tests/unit.mjs",
+    "test:browser": "node tests/integration.mjs",
+    "test:smoke": "node tests/smoke.mjs",
+    "configure:service": "node scripts/configure-service.mjs",
+    "package:extension": "node scripts/package-extension.mjs",
+    "extension:id": "node scripts/extension-id.mjs"
+  },
+  "devDependencies": {
+    "fflate": "^0.8.3",
+    "lamejs": "^1.2.1",
+    "playwright-core": "^1.64.1"
+  }
+}
